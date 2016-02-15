@@ -1,28 +1,37 @@
 
 <!DOCTYPE html>
 <head>
-  <title>Your page title here</title>
+  <title>Simon's DBC Blog</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
 </head>
 <body>
   <main>
-    <h1>Post Title</h1>
-    <h2>The subtitle, if you want it</h2>
-    <h4>Today's Date</h4>
+    <h1>Coding with a team!</h1>
+    <h2>What's version control, Git, and GitHub?</h2>
+    <h4>2/15/16</h4>
 
     <section>
       <p>
-        Your first paragraph goes here. I'm using Web 2.0 Ipsum to add content. Webtwo ipsum dolor sit amet, eskobo chumby doostang bebo. Nuvvo koofers oooooc voxy klout jaiku palantir flickr insala zinch napster oooj, airbnb mzinga vimeo yuntaa balihoo plickers whrrl edmodo appjet kippt. Yoono imvu hulu eduvant blekko imvu ebay voki napster skype, hipmunk zinch wesabe bubbli ning meebo bitly zlio. Fleck elgg ideeli disqus rovio zillow sifteo blyve jabber, bitly geni zoho foodzie qeyno twones klout jiglu, hipmunk jaiku balihoo plickers heekya eskobo yuntaa. Sococo whrrl plickers movity whrrl zinch voki nuvvo meebo, quora heroku unigo kno wufoo jibjab woopra, groupon yuntaa spock mzinga jumo meebo movity.
+        So you've decided to code with other people. Maybe you're working on a group assignment for a class, maybe a pet project has grown beyond a one-man scope and you've recruited other people! Regardless of why you've decided to become a social programmer, the next step is to gather your forces and fight over room in your code and room on the keyboard. Not really, obviously. But that is probably what it will feel like unless you are aware of, and utilize, tools like Git, GitHub, and version control when taking on your new programming endeavour.
       </p>
       <p>
-          Lijit groupon ning stypi eskobo blyve ning shopify oooooc, meebo groupon prezi ebay voxy bitly diigo. Spock ifttt skype hipmunk movity whrrl bebo oooj empressr, disqus insala palantir bitly dropio zimbra zinch oooooc etsy, klout spock insala quora omgpop trulia jibjab. Sifteo dogster ebay grockit geni scribd bitly ning unigo, plickers voki mzinga tumblr kaboodle mozy whrrl woopra udemy, foodzie joukuu elgg twitter shopify akismet rovio. Kosmix eduvant woopra dopplr balihoo ning bebo akismet, boxbe vimeo kosmix shopify zappos bitly geni loopt, qeyno disqus sococo squidoo wikia octopart.
+          So, how does a group keep from stepping on each other's toes, rewriting the same code, and generating an extraneous number of the same files all at once? This is where Git comes in. On your own computer, any folder (or directory) has the potential to become a Git repository. That means any edit you make to files in this 'repo' can be saved and updated. Well, not only that, but you can then return any file to any previously saved point. These saved points are called "commits", and "version control" is the system of saving these screen shots of your edited files.
       </p>
       <p>
-          Kazaa meevee eduvant gsnap movity kosmix kazaa klout jumo, trulia unigo groupon wakoopa spock knewton glogster heroku oooj, ning imvu appjet eskobo zillow twitter rovio. Glogster chegg voxy greplin dopplr voki foodzie xobni weebly odeo, sococo zynga knewton loopt palantir lala blyve tumblr blekko, twones akismet plaxo kippt meebo zillow zooomr insala. Oovoo imeem napster divvyshot zinch imeem voxy shopify, fleck kazaa zinch lanyrd boxbe joost wakoopa nuvvo, orkut elgg heekya sifteo scribd napster. Yammer yoono groupon dopplr buttera nuvvo eduvant klout, voxy groupon disqus eduvant oooj greplin.
+          "Okay, so version control remembers how and when I edited my code, how does that help?" Well, it knows not only how and when, but also WHY, as each edit comes with a message. This trail of breadcrumbs will explain the train of thought behind all the software you write to any coworker, or future self even, should your code ever be confusing, or have a bug, or you forget! And while that's awesome, it gets even better. Version control really shines when multiple are working in tandem, just like you will be doing! When you edit your code or files or whatever you're working on, you actually leave the real thing alone. Instead of working on that, you create a 'branch', or duplicate, of the code, and edit that instead. Once you've created this branch, edit away! You can take a simple "Hello World" file and write until you've got more LOC than amazon, the main code will still be unaffected. This unaffected part of the code is called the master branch. It should be the most rigorously tested code you've got, and should always work. Test and test your edited branch thoroughly and rigorously, and only then should you consider 'merging' that branch to the master.
       </p>
-
-        <!-- copy and paste as many sections as you want to add paragraphs -->
+      <p>
+        When you merge two branches together, you take the changes you made on the edited branch and merge them with the original. This process is important, because it bypass all that toe-stepping we talked about earlier, that comes from working in a group. If your team is cooperative, then each person will be working on a seperate task with a goal. When you all finish and merge each persons work into one complete work, those seperate tasks should overlap.
+        <p>
+          "Huh? Can we talk analogies please?" Just the question I was hoping for! Lets say Bob, Sally, and Joe are working one a 3 page document. Bob's to create a cover on the first page, Sally's to write an interesting paragraph on the second page, and Joe's going to find a funny comic to put on the third page. Groundbreaking stuff. As of now, they all access the same master branch, and create their own seperate copy branches, and do their work. After years of toil, they get back together with the following documents. Bob's got cover-blank-blank. Sally's got blank-paragraph-blank. Joe's got blank-blank-comic. The master branch, their 'real' document, so to speak, remains blank-blank-blank. It's mergin' now. Because their's no overlap (i.e. if Bob and Sally both worked on the cover), the merge goes smoothly. Their work fits together, all toes intact, and the master is now cover-paragraph-comic. Now, if the three decide to edit their peers' work, they can now make a NEW branch of the NEW master, and edit the new C-P-C master they worked so hard to get.
+        </p>
+        <p>
+          "Okay, I've almost got it. But you said download, I thought this was happening on one computer?" Ok you got me. So far we've only talked about Git repositories, which only exist locally on your own computer. An amazing free website called GitHub will create harmony between your team. It is a remote repository, a place that can store your master branch in the cloud, to be downloaded and branched off from by your team to your hearts desire. Any team member can access the master or any other branches you have stored on GitHub, and create a copy of it on their own computer. After editing, adding, subtracting, or whatever needs to be done, you can then upload the changes back into the GitHub repo. Finally, you are able to merge these changed branches back into the master, so long as its a clean merge!
+        </p>
+        <p>
+          And so you've taken your first steps towards programming teamwork! Not the greatest tutorial, but hopefully enough to get you started. And if it's far from the greatest... branch, edit, upload and merge!
+        </p\>
       </section>
     </main>
   </body>
